@@ -6,15 +6,6 @@ class Fighter:
         self.damage =damage
     def attack(self,fighter):
         fighter.life -= self.damage -fighter.defense
-
-class Creature(Fighter):
-    def __init__(self, life, defense, damage,nagi):
-        self.nagi =nagi
-        super().__init__(life, defense, damage)
-    def attack(self, fighter):
-        fighter.life -= self.damage+ self.nagi -fighter.defense
-        
-
 fighter_1=Fighter(100,20,40)
 fighter_2=Fighter(100,20,30)
 creature_2=Creature(100,20,30,5)   
