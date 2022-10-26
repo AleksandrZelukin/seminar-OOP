@@ -5,7 +5,7 @@ class Fighter:
         self.defense =defense
         self.damage =damage
     def attack(self,fighter):
-        fighter.life -= self._damage -fighter.defense
+        fighter.life -= self.damage -fighter.defense
 fighter_1=Fighter(100,20,40)
 fighter_2=Fighter(100,20,30)   
 
